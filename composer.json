@@ -1,0 +1,24 @@
+{
+    "name": "octopusfarm/result-notification",
+    "description": "Expanding on Martin Fowler's \"Replace Exceptions with Notifications\" pattern, ResultNotification allows you to pass, return, and merge results and errors from operations that should be expected to fail sometimes. (Your code runs over networks and talks to databases, right?) This will save you a lot of boilerplate, and help you to design code that doesn't assume certainty in stochastic environments.",
+    "type": "library",
+    "license": "GPLv3",
+    "autoload": {
+        "psr-4": {
+            "OctopusFarm\\ResultNotification\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Octopus Farmer"
+        }
+    ],
+    "require": {
+        "adbario/php-dot-notation": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.5"
+    }
+}
