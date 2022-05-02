@@ -3,6 +3,8 @@
 /**
  * These are more integration than unit tests because in this case, I want to prove to myself that I understand how the
  * underlying library (Adbar\Dot) works.
+ *
+ * @license https://opensource.org/licenses/MIT
  */
 
 namespace Tests;

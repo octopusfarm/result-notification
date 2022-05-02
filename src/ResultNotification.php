@@ -1,9 +1,18 @@
 <?php
 
+/**
+ * Built on Martin Fowler's "replace exceptions with notifications" idea. Pass, return, and merge results and errors
+ * without boilerplate. Supports dot-notation array keys.
+ *
+ * Please see ../README.md for more details, or run (and step through) ../demo.php if you'd like to see some practical
+ * examples.
+ *
+ * @license https://opensource.org/licenses/MIT
+ */
+
 namespace OctopusFarm\ResultNotification;
 
 use BadMethodCallException;
-use JetBrains\PhpStorm\Internal\TentativeType;
 use JsonSerializable;
 use OctopusFarm\ResultNotification\DotAddressableCollection as Collection;
 

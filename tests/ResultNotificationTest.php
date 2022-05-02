@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @license https://opensource.org/licenses/MIT
+ */
+
 namespace Tests;
 
 use BadMethodCallException;

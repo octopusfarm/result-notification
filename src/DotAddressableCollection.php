@@ -10,6 +10,8 @@
  *
  * In case you're wondering, I didn't use Laravel's Collection class because only some of its methods support dot
  * notation, and because it's nice not to bring in a huge dependency. (Not everyone uses Laravel.)
+ *
+ * @license https://opensource.org/licenses/MIT
  */
 
 namespace OctopusFarm\ResultNotification;
