@@ -35,8 +35,11 @@ $pets->merge($dog);
 $pets->merge($thylacine);
 
 
-// Serializing
+// Serializing: Array containing only the valid flag, and non-empty subscripts
 $terseArray = $pets->serialize(true);
+
+
+// Serializing: Array containing the valid flag and both subscripts, empty or not
 $verboseArray = $pets->serialize();
 
 
