@@ -34,6 +34,10 @@ class DotAddressableCollection {
         $this->dot->set($key, $val);
     }
 
+    public function setAll(array $arr) : void {
+        $this->dot->setArray($arr);
+    }
+
     public function get(string $key, bool $nullIfNotFound = false) : mixed {
         if($this->dot->has($key)) {
             return $this->dot->get($key);

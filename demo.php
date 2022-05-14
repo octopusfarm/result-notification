@@ -14,6 +14,11 @@ $result->addError("The second thing I tried", "Failed");
 assert(!$result->valid());
 
 
+// Set all at once
+$result->setResults(['This will replace' => 'all Results']);
+$result->setErrors(['This will replace' => 'all Errors']);
+
+
 // Dot Notation
 $cat = new Result();
 $cat->setResult('pet.cat.sound', 'meow');

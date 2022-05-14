@@ -74,6 +74,14 @@ class ResultNotificationTest extends TestCase {
 
     }
 
+    public function testSetters() {
+        $test = new Result($this->results, $this->errors);
+        $test->setResults($results = ['foo' => 'bar']);
+        $test->setErrors($errors = ['fizz' => 'buzz']);
+        $this->assertEquals($results, $test->results());
+        $this->assertEquals($errors, $test->errors());
+    }
+
     public function testMerge() {
         $a = new Result(['results' => 'a'], ['errors' => 'c']);
         $b = new Result(['results' => 'b'], ['errors' => 'd']);

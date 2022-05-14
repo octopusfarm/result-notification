@@ -33,6 +33,13 @@ class DotAddressableCollectionTest extends TestCase {
         $this->assertEquals($this->value, $test->get($this->key));
     }
 
+    public function testSetAll() {
+        $test = new DotAddressableCollection(['foo' => 'bar']);
+        $all = ['fizz' => 'buzz'];
+        $test->setAll($all);
+        $this->assertEquals($all, $test->all());
+    }
+
     public function testGet__key_exists() {
         $test = new DotAddressableCollection($this->arr);
         $this->assertEquals($this->value, $test->get($this->key));
